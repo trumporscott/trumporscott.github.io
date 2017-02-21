@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>Michael Scott or Donald Trump?</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="description" content="Who said it, Michael Scott from the Office or Donald Trump?">
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="scott-or-don.js?cb=12"></script>
+
+<link rel="stylesheet" href="site.css?cb=1">
+</style>
+
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1354677054589092";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="header text-center">
+    <table class="table table-responsive text-center" style="width: 100%; margin: auto;">
+    <tr>
+        <td><img src="images/michael_scott.png" style="max-height: 150px"></td>
+        <td style="vertical-align: middle;">
+            <h1>Who Said It?</h1>
+            <h3 class="subtitle">Michael Scott of The Office or Donald Trump?</h3>
+        </td>
+        <td><img src="images/donald_trump.png" style="max-height: 150px;"></td>
+    </tr>
+    </table>
+</div>
+<div class="container container-fluid text-center">
+    <div id="running-score">
+        <div id="num-right" class="label label-success">Correct: 0</div>
+        <div id="num-wrong" class="label label-danger">Incorrect: 0</div>
+        <br><br>
+    </div>
+    <div id="q-num"></div>
+    <div id="scott-or-trump"></div><br>
+    <a class="btn btn-info" href="#" id="choose-scott">Michael Scott</a> - <a class="btn btn-danger" href="#" id="choose-trump">Donald Trump</a><br><br>
+    <table class="table table-responsive" style="width: 100%; margin: auto;">
+        <tr>
+            <td width="50%">
+                <div id="answer"></div><br>
+            </td>
+            <td width="50%">
+                <div id="answer-stats" style="display: none;">Answer Stats:<br><br>
+                    <div class="label label-success" id="right-stats"></div><br><br>
+                    <div class="label label-danger" id="wrong-stats"></div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <div id="quote-source" style="display: none;"></div><br>
+    <div id="final-results" style="display: none;">
+        <h3>Final score:</h3><br>
+        <div id="final-right" class="label label-success"></div>
+        <br><br>
+        <div id="final-wrong" class="label label-danger"></div>
+        <br><br>
+        <table class="table table-responsive" style="width: 100%; margin: auto;">
+            <tr>
+                <td style="text-align: right;" width="50%">
+                    <div class="fb-like" data-href="http://trumporscott.com" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
+                </td>
+                <td style="text-align: left;" width="50%">
+                    <a href="#" id="fb-share"><img src="images/fb_share.jpg"></a>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <a href="#" id="reset-all">Try again with a random assortment? We have 75 questions in total!</a> or <a href="https://www.facebook.com/Trump-or-Scott-1025676610865273" target="_blank">Visit our FB page</a>
+        <br><br>
+    </div>
+    <div class="go-again" style="display: block;"><a href="#" class="to-top">Back to Top!</a><br><br></div>
+    <div id="trakr-ad">
+        <a href="https://trakr.link" target="_blank"><img src="images/trakr-ad.png"></a>
+        <br>
+        <h5><i>Sponsored</i></h5>
+    </div>
+</div>
+<nav class="navbar navbar-inverse navbar-fixed-bottom footer">
+  <div class="container">
+  &copy;2017 <a href="https://github.com/kaneda" target="_blank">Josh Begleiter</a>
+  </div>
+</nav>
+<img src="https://5kz.me/trumporscott" style="display: none;">
+</body>
+</html>
